@@ -1,8 +1,17 @@
 <template>
 	<div >
-		<fa-icon 
+	    <!-- Здесь вместо fontawesome можно использовать просто svg изображение (inline)-->
+		<fa-icon
+			v-if="metaState === 1"
+			:icon="['fas', 'minus']" 
+			:class="[{chevron_checked: checked}, 'chevron']"
+			@click="$emit('change')"
+		/>
+		<!-- Здесь вместо fontawesome можно использовать просто svg изображение (inline)-->
+		<fa-icon
+			v-else
 			:icon="['fas', 'chevron-down']" 
-			:class="[{chevron_checked: checked}, , 'chevron']"
+			:class="[{chevron_checked: checked}, 'chevron']"
 			@click="$emit('change')"
 		/>
 	</div>
@@ -11,8 +20,8 @@
 export default{
 	name: 'Checkbox',
 	props: {
-		checked: Boolean,
-		id: String
+		checked: Boolean,	
+		metaState: Number
 	},
 	data: ()=> ({
 		
@@ -20,11 +29,11 @@ export default{
 }
 </script>
 <style scoped lang="sass">
-	.chevron
+	.chevron, .minus
 		width: 10px
 		height: 10px
 		background-color: blue
 		color: blue
-	.chevron_checked
+	.chevron_checked, .minus_checked
 		color: white
 </style>

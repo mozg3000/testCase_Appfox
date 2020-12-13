@@ -28,6 +28,8 @@
 
     };
 </script>
-<style scoped lang="sass">
-	
+<style lang="sass">
+	*
+		margin: 0 0 0 0
+		box-sizing: border-box
 </style>
