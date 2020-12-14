@@ -32,8 +32,10 @@ export default{
 	.chevron, .minus
 		width: 10px
 		height: 10px
-		background-color: blue
-		color: blue
+		background-color: white
+		color: white
+		border: 1px solid blue
 	.chevron_checked, .minus_checked
+		background-color: blue
 		color: white
 </style>
