@@ -1,7 +1,7 @@
 # testCase_Appfox
 Тестовое задание на вакансию vue frontend разработчик:
  
-Сделать форму с чекбоксами ([Пример](https://github.com/mozg3000/testCase_Appfox/blob/main/f80daa2d3506d59f.jpg)), где:
+Сделать форму с чекбоксами (![Пример](https://github.com/mozg3000/testCase_Appfox/blob/main/f80daa2d3506d59f.jpg)), где:
  
 - Форма отдельный компонент и каждый чекбокс отдельный компонент,
 - Чекбоксы кастомные (одинаково отображаются в последних версиях Chrome, FF, Opera, Edge),
